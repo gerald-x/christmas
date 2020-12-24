@@ -5,7 +5,7 @@ class Config(object):
     TESTING = True
     SESSION_COOKIE_SECURE = True
 
-class developmentConfig(Config):
+class productionConfig(Config):
     FLASK_ENV = 'production'
     ENV = 'production'
     DEBUG = False

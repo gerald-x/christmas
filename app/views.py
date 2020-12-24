@@ -13,7 +13,7 @@ def index():
         print(name)
         task = []
 
-        with open("C:\\Users\\Okolo Gerald\Desktop\\christmas\\app\\messages.txt", 'r', encoding='utf-8') as file:
+        with open('messages.txt', 'r', encoding='utf-8') as file:
             for line in file:
                 task.append(line.rstrip('\n'))
 
