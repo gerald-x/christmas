@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}{% block main %}
+<div class="container-fluid text-container">
+    <h3 class="center m-5 p-3">Hi there, I have a special message for you this christmas. Please type in your name below</h3>
+</div>
+
+<form action="{{ url_for('index')}}" method="POST" class="center">
+    <input type="text" class="m-5 input-form rounded-lg" placeholder="Type your name here" name="name" id="inputField">
+    <button type="submit" class="btn btn-success" id="buttonField" disabled>submit</button>
+</form>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+    h3 {
+        top: 20%;
+        color: black;
+        font-family: 'Charmonman', cursive;
+    }
+    
+    .text-container {
+        background-color: whitesmoke;
+    }
+</style>
+{% endblock %}
