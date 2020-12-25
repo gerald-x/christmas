@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}{% block main %}
-<div class="container-fluid text-container mb-5 pb-3">
-    <h3 class="center m-5 p-3 pt-5 pb-3">Hi there, I have a special message for you this christmas. Please type in your name below</h3><br>
+<div class="container-fluid text-container mt-4 mb-5 pb-3">
+    <h3 class="center m-3 p-3 pt-5 pb-3">Hi there, I have a special message for you this christmas. Please type in your name below</h3><br>
     <form action="{{ url_for('index')}}" method="POST" class="center mt-5 mb-5">
         <input type="text" class="m-4 input-form rounded-lg" placeholder="Type your name here" name="name" id="inputField">
         <button type="submit" class="btn btn-success" id="buttonField" disabled>submit</button>
